@@ -19,16 +19,3 @@ document.getElementById('sendButton').addEventListener('click', function() {
         });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // const message = "";
-    const speed = 100; // Typing speed in milliseconds
-    let index = 0;
-    function typeMessage() {
-        if (index < message.length) {
-            text.textContent += message.charAt(index);
-            index++;
-            setTimeout(typeMessage, speed);
-        }
-    }
-    typeMessage();
-});
